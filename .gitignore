@@ -1,0 +1,28 @@
+# Raw Spotify export data (contains IP addresses / personal data)
+Streaming_History_*.json
+ReadMeFirst_ExtendedStreamingHistory.pdf
+
+# Local data/cache
+data/
+*.db
+*.sqlite
+*.sqlite3
+*.parquet
+*.csv
+
+# Power BI
+*.pbix
+.pbi/
+*.pbip.bak
+cache.abf
+CachedData/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store
