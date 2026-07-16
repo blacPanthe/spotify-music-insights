@@ -43,8 +43,14 @@ BPM/audio-feature enrichment and an ML layer added on top.
 
 ### 6. Audio Feature Enrichment (NEW — added per user request)
 - **BPM (tempo)**, valence, energy, danceability per track
-- Source: Spotify `/audio-features` API if dev app has access (locked down for
-  new apps since Nov 2024 — verify first), fallback: ReccoBeats API
+- Source: **ReccoBeats API** (confirmed working 2026-07-16 — Spotify's own
+  `/audio-features` returns 403 for this app, locked down for new apps since
+  Nov 2024). ReccoBeats needs no API key, is free, and mirrors the same fields
+  plus extras (acousticness, key, loudness, speechiness, liveness).
+  - Step 1: `GET https://api.reccobeats.com/v1/track?ids=<spotify_track_id>` (comma-separated, batchable)
+    -> returns ReccoBeats internal track `id`
+  - Step 2: `GET https://api.reccobeats.com/v1/track/<reccobeats_id>/audio-features`
+    -> returns tempo, valence, energy, danceability, acousticness, key, loudness, speechiness, liveness
 - BPM distribution charts, BPM vs listening time, BPM heat map by hour of day
 
 ### 7. ML / "Mood" Layer (NEW)
