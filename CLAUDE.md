@@ -86,6 +86,22 @@ key influencers visual, Q&A visual, smart narrative visual.
 [7] PUBLISH — GitHub (.pbip format), README, gitignored raw/private data
 ```
 
+## Collaboration Model
+- **Priority: the Power BI dashboard itself.** This is a data analyst portfolio
+  project — DAX fluency, data modeling, and visualization/UX quality are what
+  get evaluated, so most effort should go into steps 6-7 below.
+- **User builds the dashboard themselves** in Power BI Desktop (data model,
+  visuals, formatting, bookmarks, interactivity) — this is the skill being
+  demonstrated and stays hands-on.
+- **AI's role:** write/run the Python ingestion + enrichment scripts, design
+  and write the SQL schema/queries (SQL is being kept deliberately for the
+  resume line, even though a pure Power Query path would also work), write
+  DAX measures on request, and give implementation guidance/critique as the
+  dashboard comes together — not build the report itself.
+- Default mode of help going forward: user asks for a specific query/measure
+  or "how do I do X in Power BI" / "how can I make Y better" -> AI gives the
+  exact DAX/SQL/steps, not a finished visual.
+
 ## Timeline
 - Solo, no AI help: ~21-33 hours
 - With AI writing scripts/DAX/SQL/ML boilerplate: **~8-11 hours**
