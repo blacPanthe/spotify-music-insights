@@ -118,8 +118,10 @@ key influencers visual, Q&A visual, smart narrative visual.
 ## Status / Next Steps
 - [ ] Verify Spotify Developer app has `/audio-features` access (or confirm
       fallback to ReccoBeats API)
-- [ ] Write ingestion + cleaning script
-- [ ] Write enrichment script, run against 10,170 unique tracks
+- [x] Write ingestion + cleaning script
+- [x] Write enrichment script, run against 10,170 unique tracks
+      (result: 7,847 enriched / 2,323 not found on ReccoBeats, ~77% match rate —
+      misses concentrated in regional/Bollywood catalog)
 - [ ] Set up SQLite schema, load fact/dim tables
 - [ ] ML: mood clustering (+ optional skip-prediction model)
 - [ ] Build Power BI model + DAX measures
