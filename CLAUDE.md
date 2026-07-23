@@ -122,7 +122,9 @@ key influencers visual, Q&A visual, smart narrative visual.
 - [x] Write enrichment script, run against 10,170 unique tracks
       (result: 7,847 enriched / 2,323 not found on ReccoBeats, ~77% match rate —
       misses concentrated in regional/Bollywood catalog)
-- [ ] Set up SQLite schema, load fact/dim tables
+- [x] Set up SQLite schema, load fact/dim tables
+      (dim_date: 2,543 rows, dim_tracks: 7,847 rows, fact_plays: 114,535 rows,
+      95,898/114,535 plays matched to an enriched track)
 - [ ] ML: mood clustering (+ optional skip-prediction model)
 - [ ] Build Power BI model + DAX measures
 - [ ] Build visuals per feature scope above
